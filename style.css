@@ -1,0 +1,109 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+
+
+  }
+  
+body{
+  min-height: 100vh;
+  background-color: #BFBFBF;
+}
+  /* Estilos da barra de navegação */
+  .nav-bar {
+    background-color: #10403B;
+    color: #fff;
+    padding: 10px 10px;
+  }
+  
+  .nav-bar nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .nav-bar nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .nav-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos da seção principal */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+  }
+
+  section {
+    display: flex;
+    background-color: #BFBFBF;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    
+}
+
+
+button {
+    background: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 650;
+    width: 32vh;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transform: skew(-21deg);
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  /* Estilos do rodapé */
+  footer {
+    background-color: #10403B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
