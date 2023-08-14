@@ -6,26 +6,16 @@ searchInput.addEventListener('input', () => {
 
   scrollButtons.forEach(button => {
     const buttonNumber = button.getAttribute('data-number');
-    if (query === '' || buttonNumber.includes(query)) {
-      button.style.display = '';
+    if (query === '') {
+      button.style.display = 'block'; // Mostrar todos os botões quando a pesquisa estiver vazia
+    } else if (buttonNumber.includes(query)) {
+      button.style.display = 'block';
     } else {
-      button.style.display = '';
+      button.style.display = 'none';
     }
   });
 });
-
-searchInput.addEventListener('blur', () => {
-  if (searchInput.value.trim() === '') {
-    showAllButtons();
-  }
-});
-
-function showAllButtons() {
-  scrollButtons.forEach(button => {
-    button.style.display = '';
-  });
-}
-
+ 
 
 
 
