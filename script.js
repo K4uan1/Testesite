@@ -17,7 +17,7 @@ searchInput.addEventListener('input', () => {
 searchInput.addEventListener('blur', () => {
   if (searchInput.value.trim() === '') {
     scrollButtons.forEach(button => {
-      button.style.display = ''; // Voltar ao estilo padrão (valor vazio)
+      button.style.display = 'block'; // Voltar ao estilo padrão (valor vazio)
     });
   }
 });
