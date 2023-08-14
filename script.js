@@ -13,3 +13,4 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
+
