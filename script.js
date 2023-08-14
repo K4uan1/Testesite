@@ -9,7 +9,7 @@ searchInput.addEventListener('input', () => {
     if (query === '') {
       button.style.display = 'block'; // Mostrar todos os botões quando a pesquisa estiver vazia
     } else if (buttonNumber.includes(query)) {
-      button.style.display = 'block';
+      button.style.display = '';
     } else {
       button.style.display = 'none';
     }
