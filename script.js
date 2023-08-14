@@ -15,6 +15,7 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
+
  
 
 
