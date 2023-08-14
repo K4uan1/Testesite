@@ -7,7 +7,7 @@ searchInput.addEventListener('input', () => {
   scrollButtons.forEach(button => {
     const buttonNumber = button.getAttribute('data-number');
     if (query === '') {
-      button.style.display = 'block'; // Mostrar todos os botões quando a pesquisa estiver vazia
+      button.style.display = ''; // Mostrar todos os botões quando a pesquisa estiver vazia
     } else if (buttonNumber.includes(query)) {
       button.style.display = '';
     } else {
