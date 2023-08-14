@@ -9,7 +9,7 @@ searchInput.addEventListener('input', () => {
     if (buttonNumber.includes(query)) {
       button.style.display = 'flex';
     } else {
-      button.style.display = 'none';
+      button.style.display = 'flex';
     }
   });
 });
