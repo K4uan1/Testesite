@@ -7,20 +7,24 @@ searchInput.addEventListener('input', () => {
   scrollButtons.forEach(button => {
     const buttonNumber = button.getAttribute('data-number');
     if (query === '' || buttonNumber.includes(query)) {
-      button.style.display = '';
+      button.style.display = 'block';
     } else {
-      button.style.display = '';
+      button.style.display = 'none';
     }
   });
 });
 
 searchInput.addEventListener('blur', () => {
   if (searchInput.value.trim() === '') {
-    scrollButtons.forEach(button => {
-      button.style.display = 'block'; // Voltar ao estilo padrão (valor vazio)
-    });
+    showAllButtons();
   }
 });
+
+function showAllButtons() {
+  scrollButtons.forEach(button => {
+    button.style.display = 'block';
+  });
+}
 
 
 
