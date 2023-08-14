@@ -11,7 +11,7 @@ searchInput.addEventListener('input', () => {
     } else if (buttonNumber.includes(query)) {
       button.style.display = '';
     } else {
-      button.style.display = 'none';
+      button.style.display = '';
     }
   });
 });
