@@ -6,8 +6,8 @@ searchInput.addEventListener('input', () => {
 
   scrollButtons.forEach(button => {
     const buttonNumber = button.getAttribute('data-number');
-    if (query === '' || buttonNumber.includes(query)) {
-      button.style.display = '';
+    if (buttonNumber.includes(query)) {
+      button.style.display = 'block';
     } else {
       button.style.display = 'none';
     }
