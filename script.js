@@ -17,7 +17,7 @@ searchInput.addEventListener('input', () => {
 searchInput.addEventListener('focusout', () => {
   if (searchInput.value.trim() === '') {
     scrollButtons.forEach(button => {
-      button.style.display = 'block';
+      button.style.display = '';
     });
   }
 });
