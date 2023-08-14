@@ -7,7 +7,7 @@ searchInput.addEventListener('input', () => {
   scrollButtons.forEach(button => {
     const buttonNumber = button.getAttribute('data-number');
     if (buttonNumber.includes(query)) {
-      button.style.display = '';
+      button.style.display = 'flex';
     } else {
       button.style.display = 'none';
     }
