@@ -22,7 +22,7 @@ searchInput.addEventListener('blur', () => {
 
 function showAllButtons() {
   scrollButtons.forEach(button => {
-    button.style.display = 'block';
+    button.style.display = '';
   });
 }
 
