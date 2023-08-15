@@ -15,14 +15,14 @@ searchInput.addEventListener('input', () => {
 });
 
 searchInput.addEventListener('blur', () => {
-  if (searchInput.value.trim() === '') {
+  if (searchInput.value.trim() === 'block') {
     showAllButtons();
   }
 });
 
 function showAllButtons() {
   scrollButtons.forEach(button => {
-    button.style.display = '';
+    button.style.display = 'block';
   });
 }
 
