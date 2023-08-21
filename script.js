@@ -1,32 +1,7 @@
-const searchInput = document.getElementById('searchInput');
-const scrollButtons = document.querySelectorAll('.scrollButton');
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButton = document.querySelector(".menu-button");
 
-searchInput.addEventListener('input', () => {
-  const query = searchInput.value.trim().toLowerCase();
-
-  scrollButtons.forEach(button => {
-    const buttonNumber = button.getAttribute('data-number');
-    if (query === '' || buttonNumber.includes(query)) {
-      button.style.display = '';
-    } else {
-      button.style.display = 'none';
-    }
+  menuButton.addEventListener("click", function() {
+    this.classList.toggle("active");
   });
 });
-
-searchInput.addEventListener('blur', () => {
-  if (searchInput.value.trim() === 'block') {
-    showAllButtons();
-  }
-});
-
-function showAllButtons() {
-  scrollButtons.forEach(button => {
-    button.style.display = 'block';
-  });
-}
-
-
-// não mexer!!!!!!!!!!!!
-
- 
